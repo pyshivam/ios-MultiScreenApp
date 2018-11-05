@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ILY-6v-MKH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kWg-W3-0Rn">
+                                <rect key="frame" x="104.5" y="602" width="166" height="45"/>
+                                <color key="backgroundColor" red="0.25009823779517598" green="0.7561890262026062" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Txm-dc-T4p"/>
+                                    <constraint firstAttribute="width" constant="166" id="YAQ-91-9Dj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Second Page">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="ZbS-YR-khl" kind="show" id="N2t-37-ZbO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Below button will take you to next screen." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MuX-TO-lT5">
+                                <rect key="frame" x="16" y="131" width="343" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.59629362538079833" blue="0.85710418841776648" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W5b-bo-Qyt">
+                                <rect key="frame" x="104" y="531" width="167" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="dMS-iI-hAs"/>
+                                    <constraint firstAttribute="width" constant="167" id="rxT-OO-0Mb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Third Page"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="b4s-gU-fsb" kind="push" id="AIq-72-ouc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kWg-W3-0Rn" secondAttribute="bottom" constant="20" id="8FL-5Y-j9K"/>
+                            <constraint firstItem="MuX-TO-lT5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Izc-83-oDg"/>
+                            <constraint firstItem="kWg-W3-0Rn" firstAttribute="top" secondItem="W5b-bo-Qyt" secondAttribute="bottom" constant="20" id="RKq-Vt-Ugb"/>
+                            <constraint firstItem="MuX-TO-lT5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="67" id="ZSz-Mb-DJC"/>
+                            <constraint firstItem="MuX-TO-lT5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bcP-yC-GcZ"/>
+                            <constraint firstItem="W5b-bo-Qyt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fuX-XI-BcT"/>
+                            <constraint firstItem="kWg-W3-0Rn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oX9-Xu-lrK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home Page" id="qT8-o0-QhJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.79999999999995" y="133.5832083958021"/>
+        </scene>
+        <!--Second Page-->
+        <scene sceneID="ITQ-xb-vtZ">
+            <objects>
+                <viewController storyboardIdentifier="MySecondScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZbS-YR-khl" customClass="MySecondScreen" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5YV-eM-PnC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Its my second page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hb-de-jil">
+                                <rect key="frame" x="70" y="160" width="234" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="MSt-my-BfW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JR8-8o-ngr" firstAttribute="trailing" secondItem="1Hb-de-jil" secondAttribute="trailing" constant="71" id="fev-oN-Qc7"/>
+                            <constraint firstItem="1Hb-de-jil" firstAttribute="top" secondItem="JR8-8o-ngr" secondAttribute="top" constant="96" id="kWZ-1x-cri"/>
+                            <constraint firstItem="1Hb-de-jil" firstAttribute="leading" secondItem="JR8-8o-ngr" secondAttribute="leading" constant="70" id="ywB-7f-PTN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JR8-8o-ngr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second Page" id="rCR-a0-5az"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zb9-zB-f7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576.4617691154424" y="132"/>
+        </scene>
+        <!--Third Page-->
+        <scene sceneID="yZ3-pZ-9mN">
+            <objects>
+                <viewController storyboardIdentifier="MyThirdScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="b4s-gU-fsb" customClass="MyThirdScreen" customModule="practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dT6-JG-bxC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is third page.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqv-5Q-Ccv">
+                                <rect key="frame" x="16" y="333" width="343" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="hCM-Ac-WdA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pqv-5Q-Ccv" firstAttribute="centerX" secondItem="Dbk-fC-3G7" secondAttribute="centerX" id="LCP-t2-gt5"/>
+                            <constraint firstItem="pqv-5Q-Ccv" firstAttribute="leading" secondItem="Dbk-fC-3G7" secondAttribute="leading" constant="16" id="Yn9-Ay-v6U"/>
+                            <constraint firstItem="pqv-5Q-Ccv" firstAttribute="centerY" secondItem="Dbk-fC-3G7" secondAttribute="centerY" id="tGH-4U-ad9"/>
+                            <constraint firstItem="Dbk-fC-3G7" firstAttribute="trailing" secondItem="pqv-5Q-Ccv" secondAttribute="trailing" constant="16" id="ukg-G7-eRT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dbk-fC-3G7"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third Page" id="fGJ-Eh-vIP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfB-PE-dx7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522.39999999999998" y="133.5832083958021"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mhw-0b-Tiw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ILY-6v-MKH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XXZ-Sy-1Mb">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OVp-uF-V6R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17R-ZK-hKS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="134"/>
+        </scene>
+    </scenes>
+</document>
